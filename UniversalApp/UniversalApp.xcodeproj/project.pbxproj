@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		4745072521D9BF0300C80589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745072421D9BF0300C80589 /* AppDelegate.swift */; };
 		4745072721D9BF0300C80589 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745072621D9BF0300C80589 /* ViewController.swift */; };
-		4745072A21D9BF0300C80589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4745072821D9BF0300C80589 /* Main.storyboard */; };
+		4745072A21D9BF0300C80589 /* iPhoneMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4745072821D9BF0300C80589 /* iPhoneMain.storyboard */; };
 		4745072C21D9BF0400C80589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4745072B21D9BF0400C80589 /* Assets.xcassets */; };
 		4745072F21D9BF0400C80589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4745072D21D9BF0400C80589 /* LaunchScreen.storyboard */; };
+		4745073821D9C4E600C80589 /* iPadMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4745073721D9C4E600C80589 /* iPadMain.storyboard */; };
 		AB93FC9343D48806463C80B7 /* Pods_UniversalApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F57647E66BD27D2ABC56D5 /* Pods_UniversalApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,10 +20,11 @@
 		4745072121D9BF0300C80589 /* UniversalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4745072421D9BF0300C80589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4745072621D9BF0300C80589 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4745072921D9BF0300C80589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4745072921D9BF0300C80589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPhoneMain.storyboard; sourceTree = "<group>"; };
 		4745072B21D9BF0400C80589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4745072E21D9BF0400C80589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4745073021D9BF0400C80589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4745073721D9C4E600C80589 /* iPadMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iPadMain.storyboard; sourceTree = "<group>"; };
 		86119EDFDCEB9AC3FF2AD88F /* Pods-UniversalApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UniversalApp/Pods-UniversalApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ADA97B601C88241AEECDE346 /* Pods-UniversalApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-UniversalApp/Pods-UniversalApp.release.xcconfig"; sourceTree = "<group>"; };
 		C2F57647E66BD27D2ABC56D5 /* Pods_UniversalApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniversalApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,7 +74,8 @@
 			children = (
 				4745072421D9BF0300C80589 /* AppDelegate.swift */,
 				4745072621D9BF0300C80589 /* ViewController.swift */,
-				4745072821D9BF0300C80589 /* Main.storyboard */,
+				4745072821D9BF0300C80589 /* iPhoneMain.storyboard */,
+				4745073721D9C4E600C80589 /* iPadMain.storyboard */,
 				4745072B21D9BF0400C80589 /* Assets.xcassets */,
 				4745072D21D9BF0400C80589 /* LaunchScreen.storyboard */,
 				4745073021D9BF0400C80589 /* Info.plist */,
@@ -148,8 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4745072F21D9BF0400C80589 /* LaunchScreen.storyboard in Resources */,
+				4745073821D9C4E600C80589 /* iPadMain.storyboard in Resources */,
 				4745072C21D9BF0400C80589 /* Assets.xcassets in Resources */,
-				4745072A21D9BF0300C80589 /* Main.storyboard in Resources */,
+				4745072A21D9BF0300C80589 /* iPhoneMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,12 +214,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4745072821D9BF0300C80589 /* Main.storyboard */ = {
+		4745072821D9BF0300C80589 /* iPhoneMain.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4745072921D9BF0300C80589 /* Base */,
 			);
-			name = Main.storyboard;
+			name = iPhoneMain.storyboard;
 			sourceTree = "<group>";
 		};
 		4745072D21D9BF0400C80589 /* LaunchScreen.storyboard */ = {
