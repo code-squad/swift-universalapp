@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IX1-5i-zRP">
-                                <rect key="frame" x="16" y="20" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한국어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IX1-5i-zRP">
+                                <rect key="frame" x="16" y="20" width="45" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Gjh-pL-1KI"/>
                                 </constraints>
@@ -26,38 +26,40 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wt5-yd-kmb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheonUhui" translatesAutoresizingMaskIntoConstraints="NO" id="Wt5-yd-kmb">
                                 <rect key="frame" x="16" y="62" width="343" height="343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Wt5-yd-kmb" secondAttribute="height" multiplier="1:1" id="Pw1-fo-Bfq"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHm-7v-kE8">
-                                <rect key="frame" x="16" y="435" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="천우희" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHm-7v-kE8">
+                                <rect key="frame" x="16" y="435" width="45" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="Wsx-h7-YxU"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="Wsx-h7-YxU"/>
                                     <constraint firstAttribute="height" constant="21" id="vmM-jk-pQ7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgN-eT-iZc">
-                                <rect key="frame" x="16" y="471" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgN-eT-iZc">
+                                <rect key="frame" x="16" y="471" width="343" height="180"/>
+                                <mutableString key="text">2004년 영화 《신부수업》에 단역으로 출연하며 연기 활동을 시작하였고 2009년에는 영화 《마더》에 조연으로 출연하였다. 2011년 영화 《써니》로 주목을 받으며 그해 대종상과 청룡영화상 여우조연상 후보에 올랐다. 이후 2014년 개봉한 집단 성폭행 피해 학생의 이야기를 그린 영화 《한공주》에 주연으로 출연하여 호평을 받았다. 이 작품으로 같은 해 디렉터스 컷 어워즈 여자 신인연기자상과 한국영화평론가협회상 여우주연상, 그리고 청룡영화상 여우주연상을 수상했고, 이듬해 올해의 영화상 여우주연상, 맥스무비 최고의 영화상 최고의 여자배우상, 들꽃영화상 여우주연상, 백상예술대상 영화부문 여자 신인연기상을 수상했다.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mli-b5-TFC">
-                                <rect key="frame" x="313" y="435" width="46" height="21"/>
+                                <rect key="frame" x="307" y="435" width="52" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="vo6-IM-dZL"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="생년월일"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QgN-eT-iZc" secondAttribute="trailing" constant="16" id="2PS-qL-EFv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wt5-yd-kmb" secondAttribute="trailing" constant="16" id="C1V-ZM-LLE"/>
                             <constraint firstItem="IX1-5i-zRP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FPe-vr-eGi"/>
                             <constraint firstItem="QgN-eT-iZc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GVF-Cc-Tnf"/>
@@ -70,6 +72,7 @@
                             <constraint firstItem="Mli-b5-TFC" firstAttribute="centerY" secondItem="RHm-7v-kE8" secondAttribute="centerY" id="m0p-dm-CQh"/>
                             <constraint firstItem="QgN-eT-iZc" firstAttribute="top" secondItem="RHm-7v-kE8" secondAttribute="bottom" constant="15" id="qnu-yp-UQG"/>
                             <constraint firstItem="RHm-7v-kE8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uy0-ET-1nA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QgN-eT-iZc" secondAttribute="bottom" constant="16" id="vUg-bt-Ltp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -79,4 +82,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CheonUhui" width="450.75" height="447.75"/>
+    </resources>
 </document>

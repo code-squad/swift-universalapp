@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IX1-5i-zRP">
-                                <rect key="frame" x="16" y="20" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="にほん語ご" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IX1-5i-zRP">
+                                <rect key="frame" x="16" y="20" width="87" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Gjh-pL-1KI"/>
                                 </constraints>
@@ -26,24 +26,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wt5-yd-kmb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AoiYu" translatesAutoresizingMaskIntoConstraints="NO" id="Wt5-yd-kmb">
                                 <rect key="frame" x="16" y="62" width="343" height="343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Wt5-yd-kmb" secondAttribute="height" multiplier="1:1" id="Pw1-fo-Bfq"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHm-7v-kE8">
-                                <rect key="frame" x="16" y="435" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あおい" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHm-7v-kE8">
+                                <rect key="frame" x="16" y="435" width="52" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="Wsx-h7-YxU"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="Wsx-h7-YxU"/>
                                     <constraint firstAttribute="height" constant="21" id="vmM-jk-pQ7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgN-eT-iZc">
-                                <rect key="frame" x="16" y="471" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蒼井優(本名:夏井優,1985年8月17日~)は日本のモデル兼俳優だ。 福岡県春日市で生まれ,所属会社は伊藤カンパニーだ。 1999年,ミュージカル'アニメ'でデビューした。 身長160センチ,血液型A型。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgN-eT-iZc">
+                                <rect key="frame" x="16" y="471" width="343" height="180"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -53,11 +53,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="vo6-IM-dZL"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="誕生日"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QgN-eT-iZc" secondAttribute="trailing" constant="16" id="5vS-iq-c7M"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wt5-yd-kmb" secondAttribute="trailing" constant="16" id="C1V-ZM-LLE"/>
                             <constraint firstItem="IX1-5i-zRP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FPe-vr-eGi"/>
                             <constraint firstItem="QgN-eT-iZc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GVF-Cc-Tnf"/>
@@ -65,6 +66,7 @@
                             <constraint firstItem="RHm-7v-kE8" firstAttribute="top" secondItem="Wt5-yd-kmb" secondAttribute="bottom" constant="30" id="TE0-co-x9h"/>
                             <constraint firstItem="Mli-b5-TFC" firstAttribute="trailing" secondItem="Wt5-yd-kmb" secondAttribute="trailing" id="UJz-Fe-FRi"/>
                             <constraint firstItem="IX1-5i-zRP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ujw-fR-hil"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QgN-eT-iZc" secondAttribute="bottom" constant="16" id="XOG-wp-0Ep"/>
                             <constraint firstItem="Wt5-yd-kmb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dg4-bq-q5J"/>
                             <constraint firstItem="Wt5-yd-kmb" firstAttribute="top" secondItem="IX1-5i-zRP" secondAttribute="bottom" constant="21" id="g3F-ej-i7h"/>
                             <constraint firstItem="Mli-b5-TFC" firstAttribute="centerY" secondItem="RHm-7v-kE8" secondAttribute="centerY" id="m0p-dm-CQh"/>
@@ -79,4 +81,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AoiYu" width="132" height="181.67999267578125"/>
+    </resources>
 </document>
