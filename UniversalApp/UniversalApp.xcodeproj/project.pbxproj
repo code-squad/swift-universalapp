@@ -12,7 +12,7 @@
 		4745072A21D9BF0300C80589 /* iPhoneMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4745072821D9BF0300C80589 /* iPhoneMain.storyboard */; };
 		4745072C21D9BF0400C80589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4745072B21D9BF0400C80589 /* Assets.xcassets */; };
 		4745072F21D9BF0400C80589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4745072D21D9BF0400C80589 /* LaunchScreen.storyboard */; };
-		4745073821D9C4E600C80589 /* iPadMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4745073721D9C4E600C80589 /* iPadMain.storyboard */; };
+		47FCA12321DC66D500F49EAE /* iPadMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FCA12521DC66D500F49EAE /* iPadMain.storyboard */; };
 		AB93FC9343D48806463C80B7 /* Pods_UniversalApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F57647E66BD27D2ABC56D5 /* Pods_UniversalApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,16 @@
 		4745072B21D9BF0400C80589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4745072E21D9BF0400C80589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4745073021D9BF0400C80589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4745073721D9C4E600C80589 /* iPadMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iPadMain.storyboard; sourceTree = "<group>"; };
+		47FCA12221DC66C900F49EAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/iPhoneMain.strings; sourceTree = "<group>"; };
+		47FCA12421DC66D500F49EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPadMain.storyboard; sourceTree = "<group>"; };
+		47FCA12721DC66D700F49EAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/iPadMain.strings; sourceTree = "<group>"; };
+		47FCA12821DC66EA00F49EAE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/iPhoneMain.strings; sourceTree = "<group>"; };
+		47FCA12921DC66EA00F49EAE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/iPadMain.strings; sourceTree = "<group>"; };
+		47FCA12A21DC66F000F49EAE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/iPhoneMain.strings; sourceTree = "<group>"; };
+		47FCA12B21DC66F000F49EAE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/iPadMain.strings; sourceTree = "<group>"; };
+		47FCA12C21DC66F000F49EAE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		47FCA12D21DC673200F49EAE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/iPhoneMain.strings"; sourceTree = "<group>"; };
+		47FCA12E21DC673200F49EAE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/iPadMain.strings"; sourceTree = "<group>"; };
 		86119EDFDCEB9AC3FF2AD88F /* Pods-UniversalApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UniversalApp/Pods-UniversalApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ADA97B601C88241AEECDE346 /* Pods-UniversalApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-UniversalApp/Pods-UniversalApp.release.xcconfig"; sourceTree = "<group>"; };
 		C2F57647E66BD27D2ABC56D5 /* Pods_UniversalApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniversalApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,7 +84,7 @@
 				4745072421D9BF0300C80589 /* AppDelegate.swift */,
 				4745072621D9BF0300C80589 /* ViewController.swift */,
 				4745072821D9BF0300C80589 /* iPhoneMain.storyboard */,
-				4745073721D9C4E600C80589 /* iPadMain.storyboard */,
+				47FCA12521DC66D500F49EAE /* iPadMain.storyboard */,
 				4745072B21D9BF0400C80589 /* Assets.xcassets */,
 				4745072D21D9BF0400C80589 /* LaunchScreen.storyboard */,
 				4745073021D9BF0400C80589 /* Info.plist */,
@@ -151,7 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4745072F21D9BF0400C80589 /* LaunchScreen.storyboard in Resources */,
-				4745073821D9C4E600C80589 /* iPadMain.storyboard in Resources */,
+				47FCA12321DC66D500F49EAE /* iPadMain.storyboard in Resources */,
 				4745072C21D9BF0400C80589 /* Assets.xcassets in Resources */,
 				4745072A21D9BF0300C80589 /* iPhoneMain.storyboard in Resources */,
 			);
@@ -218,6 +227,10 @@
 			isa = PBXVariantGroup;
 			children = (
 				4745072921D9BF0300C80589 /* Base */,
+				47FCA12221DC66C900F49EAE /* en */,
+				47FCA12821DC66EA00F49EAE /* ja */,
+				47FCA12A21DC66F000F49EAE /* ko */,
+				47FCA12D21DC673200F49EAE /* zh-Hans */,
 			);
 			name = iPhoneMain.storyboard;
 			sourceTree = "<group>";
@@ -226,8 +239,21 @@
 			isa = PBXVariantGroup;
 			children = (
 				4745072E21D9BF0400C80589 /* Base */,
+				47FCA12C21DC66F000F49EAE /* ko */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		47FCA12521DC66D500F49EAE /* iPadMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47FCA12421DC66D500F49EAE /* Base */,
+				47FCA12721DC66D700F49EAE /* en */,
+				47FCA12921DC66EA00F49EAE /* ja */,
+				47FCA12B21DC66F000F49EAE /* ko */,
+				47FCA12E21DC673200F49EAE /* zh-Hans */,
+			);
+			name = iPadMain.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -237,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -298,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
