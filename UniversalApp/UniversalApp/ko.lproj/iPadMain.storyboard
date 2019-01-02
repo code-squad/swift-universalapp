@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A74-LU-Hpg">
-                                <rect key="frame" x="20" y="20" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한국어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A74-LU-Hpg">
+                                <rect key="frame" x="20" y="20" width="45" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="D15-4X-q6a"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="h4T-WG-3RY"/>
@@ -27,43 +27,44 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufx-nC-tcQ">
-                                <rect key="frame" x="706" y="20" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show this label on iPad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufx-nC-tcQ">
+                                <rect key="frame" x="560.5" y="20" width="187.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="r7O-rX-OAP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.52012774240000004" green="0.68978707900000003" blue="0.42466142169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y8j-j1-CGz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheonUhui" translatesAutoresizingMaskIntoConstraints="NO" id="y8j-j1-CGz">
                                 <rect key="frame" x="20" y="49" width="728" height="728"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="y8j-j1-CGz" secondAttribute="height" multiplier="1:1" id="Vli-BW-Uo9"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CE7-cj-ExO">
-                                <rect key="frame" x="20" y="798" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="천우희" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CE7-cj-ExO">
+                                <rect key="frame" x="20" y="798" width="45" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="SRQ-eM-Sa7"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="SRQ-eM-Sa7"/>
                                     <constraint firstAttribute="height" constant="21" id="U8W-Gj-rCq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndo-nb-C6Z">
-                                <rect key="frame" x="20" y="839" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndo-nb-C6Z">
+                                <rect key="frame" x="20" y="839" width="728" height="165"/>
+                                <mutableString key="text">2004년 영화 《신부수업》에 단역으로 출연하며 연기 활동을 시작하였고 2009년에는 영화 《마더》에 조연으로 출연하였다. 2011년 영화 《써니》로 주목을 받으며 그해 대종상과 청룡영화상 여우조연상 후보에 올랐다. 이후 2014년 개봉한 집단 성폭행 피해 학생의 이야기를 그린 영화 《한공주》에 주연으로 출연하여 호평을 받았다. 이 작품으로 같은 해 디렉터스 컷 어워즈 여자 신인연기자상과 한국영화평론가협회상 여우주연상, 그리고 청룡영화상 여우주연상을 수상했고, 이듬해 올해의 영화상 여우주연상, 맥스무비 최고의 영화상 최고의 여자배우상, 들꽃영화상 여우주연상, 백상예술대상 영화부문 여자 신인연기상을 수상했다.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW2-Ei-2ga">
-                                <rect key="frame" x="702" y="793.5" width="46" height="30"/>
+                                <rect key="frame" x="696" y="793.5" width="52" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="hhi-vP-FaG"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="생년월일"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,7 +75,9 @@
                             <constraint firstItem="dW2-Ei-2ga" firstAttribute="centerY" secondItem="CE7-cj-ExO" secondAttribute="centerY" id="6yi-9C-UhK"/>
                             <constraint firstItem="y8j-j1-CGz" firstAttribute="leading" secondItem="qZA-bK-BPN" secondAttribute="leading" constant="20" id="9qd-2K-Pkq"/>
                             <constraint firstItem="A74-LU-Hpg" firstAttribute="leading" secondItem="qZA-bK-BPN" secondAttribute="leading" constant="20" id="GwZ-xm-Nqq"/>
+                            <constraint firstItem="qZA-bK-BPN" firstAttribute="bottom" secondItem="Ndo-nb-C6Z" secondAttribute="bottom" constant="20" id="Jug-AY-Ycw"/>
                             <constraint firstItem="qZA-bK-BPN" firstAttribute="trailing" secondItem="dW2-Ei-2ga" secondAttribute="trailing" constant="20" id="LzM-xs-wbO"/>
+                            <constraint firstItem="qZA-bK-BPN" firstAttribute="trailing" secondItem="Ndo-nb-C6Z" secondAttribute="trailing" constant="20" id="OYL-XK-VKS"/>
                             <constraint firstItem="CE7-cj-ExO" firstAttribute="leading" secondItem="qZA-bK-BPN" secondAttribute="leading" constant="20" id="Oq1-lW-OOp"/>
                             <constraint firstItem="A74-LU-Hpg" firstAttribute="top" secondItem="qZA-bK-BPN" secondAttribute="top" id="X2e-7C-bxH"/>
                             <constraint firstItem="ufx-nC-tcQ" firstAttribute="centerY" secondItem="A74-LU-Hpg" secondAttribute="centerY" id="lho-Po-p6J"/>
@@ -90,4 +93,7 @@
             <point key="canvasLocation" x="80.46875" y="112.49999999999999"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CheonUhui" width="450.75" height="447.75"/>
+    </resources>
 </document>
