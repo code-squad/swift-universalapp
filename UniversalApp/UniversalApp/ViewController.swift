@@ -11,9 +11,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        guard let locale = locale() else { return }
     }
-
-
+    
+    func locale() -> String? {
+        let locale = Locale.current
+        guard let language = locale.languageCode,
+            let region = locale.regionCode else { return nil }
+        return language + "_" + region
+    }
 }
-
