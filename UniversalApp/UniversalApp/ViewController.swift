@@ -9,13 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let (language, region) = locale() else { return }
         
-        guard let name = actress(from: region) else { return }
-        imageView.image = UIImage(named: name)
+        guard let actressName = actress(from: region) else { return }
+        imageView.image = UIImage(named: actressName)
+        
+        let name = localizedString(forKey: "name", from: actressName)
+        let info = localizedString(forKey: "info", from: actressName)
+        nameLabel.text = name
+        infoLabel.text = info
     }
     
     private func locale() -> (String, String)? {
@@ -26,11 +33,12 @@ class ViewController: UIViewController {
     }
     
     private func actress(from region: String) -> String? {
-//        KR CheonUhui
-//        US JenniferShraderLawrence
-//        JP AoiYu
-//        CN FanBingbing
         guard let actress = Actress(rawValue: region) else { return nil }
         return actress.description
+    }
+    
+    private func localizedString(forKey key: String, from name: String) -> String {
+        let result = Bundle.main.localizedString(forKey: key, value: nil, table: name)
+        return result
     }
 }
