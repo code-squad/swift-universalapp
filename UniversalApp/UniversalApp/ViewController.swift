@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var languageRegionLabel: UILabel!
-    @IBOutlet weak var birthButtton: UIButton!
+    @IBOutlet weak var birthButton: UIButton!
     
     private let actress = Actress()
     private let language = Language()
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         nameLabel.text = name
         infoLabel.text = info
         languageRegionLabel.text = "\(language)-\(region)"
-        birthButtton.setTitle(language.birthTitle, for: UIControl.State.normal)
+        birthButton.setTitle(language.birthTitle, for: UIControl.State.normal)
     }
     
     @IBAction func clickBirthButton(_ sender: UIButton) {
