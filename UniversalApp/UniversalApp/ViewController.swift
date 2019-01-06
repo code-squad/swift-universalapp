@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var languageRegionLabel: UILabel!
     @IBOutlet weak var birthButton: UIButton!
     
-    private let actress = Actress()
+    private let region = Region()
     private let language = Language()
 
     override func viewDidLoad() {
@@ -23,11 +23,11 @@ class ViewController: UIViewController {
     }
     
     private func configure() {
-        guard let name = actress.name else { return }
-        guard let info = actress.info else { return }
-        guard let region = actress.region else { return }
+        guard let englishName = region.englishName else { return }
+        guard let name = region.localizationName else { return }
+        guard let info = region.info else { return }
         
-        imageView.image = UIImage(named: actress.description)
+        imageView.image = UIImage(named: englishName)
         nameLabel.text = name
         infoLabel.text = info
         languageRegionLabel.text = "\(language)-\(region)"
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     }
     
     private func alert() {
-        let alert = UIAlertController(title: nil, message: actress.birth, preferredStyle: .alert)
+        let alert = UIAlertController(title: nil, message: region.birth, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
