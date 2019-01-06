@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--iPad View Controller-->
+        <!--Pad View Controller-->
         <scene sceneID="CFm-le-Tkr">
             <objects>
-                <viewController id="Xx0-U0-45v" customClass="iPadViewController" customModule="UniversalApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Xx0-U0-45v" customClass="PadViewController" customModule="UniversalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ywS-ZB-s9l">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndo-nb-C6Z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndo-nb-C6Z">
                                 <rect key="frame" x="20" y="839" width="728" height="165"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -64,6 +64,9 @@
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="hhi-vP-FaG"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clickBirthButton:" destination="Xx0-U0-45v" eventType="touchUpInside" id="Qmi-iN-I4Z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -86,6 +89,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qZA-bK-BPN"/>
                     </view>
+                    <connections>
+                        <outlet property="birthButton" destination="dW2-Ei-2ga" id="bu8-1I-F0l"/>
+                        <outlet property="imageView" destination="y8j-j1-CGz" id="ORK-WO-wah"/>
+                        <outlet property="infoLabel" destination="Ndo-nb-C6Z" id="TOa-bV-OvM"/>
+                        <outlet property="languageRegionLabel" destination="A74-LU-Hpg" id="Btr-BG-giz"/>
+                        <outlet property="nameLabel" destination="CE7-cj-ExO" id="ahG-4a-bMi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBM-Bz-Ndy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
