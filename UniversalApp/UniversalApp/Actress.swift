@@ -18,4 +18,13 @@ enum Actress: String, CustomStringConvertible {
         case .CN: return "FanBingbing"
         }
     }
+    
+    var birth: String {
+        switch self {
+        case .KR: return "1987-04-20"
+        case .JP: return "1985-08-17"
+        case .US: return "1990-08-15"
+        case .CN: return "1981-09-16"
+        }
+    }
 }
