@@ -28,7 +28,18 @@ struct Actress: CustomStringConvertible {
             case .CN: return "1981-09-16"
             }
         }
+        
+        var birthFormat: String {
+            switch self {
+            case .KR: return "ko"
+            case .JP: return "ja"
+            case .US: return "en"
+            case .CN: return "zh"
+            }
+        }
     }
+    
+    var dateFormat = "yyyy-MM-dd"
     
     var description: String {
         guard let actressInfo = self.actressInfo else { return "" }
@@ -42,7 +53,29 @@ struct Actress: CustomStringConvertible {
     
     var birth: String? {
         guard let actressInfo = self.actressInfo else { return nil }
-        return actressInfo.birth
+        guard let birthday = dateFormat(with: actressInfo) else { return nil }
+        return birthday
+    }
+    
+    private func dateFormat(with info: ActressInfo) -> String? {
+        guard let date = inputDateFormatter(with: info) else { return nil }
+        let birthday = outputDateFormatter(date, with: info)
+        return birthday
+    }
+    
+    private func inputDateFormatter(with info: ActressInfo) -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = dateFormat
+        guard let date = dateFormatter.date(from: info.birth) else { return nil }
+        return date
+    }
+    
+    private func outputDateFormatter(_ date: Date, with info: ActressInfo) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .full
+        dateFormatter.locale = Locale(identifier: info.birthFormat)
+        let birthday = dateFormatter.string(from: date)
+        return birthday
     }
     
     var info: String? {
