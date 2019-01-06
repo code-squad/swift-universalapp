@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Actress: CustomStringConvertible {
-    enum ActressInfo: String, CustomStringConvertible {
+struct Region: CustomStringConvertible {
+    enum ActressInfo: String {
         case KR, JP, US, CN
         
-        var description: String {
+        var englishName: String {
             switch self {
             case .KR: return "CheonUhui"
             case .JP: return "AoiYu"
@@ -41,20 +41,41 @@ struct Actress: CustomStringConvertible {
     
     var dateFormat = "yyyy-MM-dd"
     
-    var description: String {
-        guard let actressInfo = self.actressInfo else { return "" }
-        return actressInfo.description
+    private var actressInfo: ActressInfo? {
+        guard let region = Locale.current.regionCode else { return nil }
+        guard let actressInfo = ActressInfo(rawValue: region) else { return nil }
+        return actressInfo
     }
     
-    var name: String? {
+    var englishName: String? {
         guard let actressInfo = self.actressInfo else { return nil }
-        return localizedString(forKey: "name", from: actressInfo.description)
+        return actressInfo.englishName
+    }
+    
+    var description: String {
+        guard let actressInfo = self.actressInfo else { return "" }
+        return localizedString(forKey: "region", from: actressInfo.englishName)
+    }
+    
+    var localizationName: String? {
+        guard let actressInfo = self.actressInfo else { return nil }
+        return localizedString(forKey: "name", from: actressInfo.englishName)
+    }
+    
+    var info: String? {
+        guard let actressInfo = self.actressInfo else { return nil }
+        return localizedString(forKey: "info", from: actressInfo.englishName)
     }
     
     var birth: String? {
         guard let actressInfo = self.actressInfo else { return nil }
         guard let birthday = dateFormat(with: actressInfo) else { return nil }
         return birthday
+    }
+    
+    private func localizedString(forKey key: String, from name: String) -> String {
+        let result = Bundle.main.localizedString(forKey: key, value: nil, table: name)
+        return result
     }
     
     private func dateFormat(with info: ActressInfo) -> String? {
@@ -76,26 +97,5 @@ struct Actress: CustomStringConvertible {
         dateFormatter.locale = Locale(identifier: info.birthFormat)
         let birthday = dateFormatter.string(from: date)
         return birthday
-    }
-    
-    var info: String? {
-        guard let actressInfo = self.actressInfo else { return nil }
-        return localizedString(forKey: "info", from: actressInfo.description)
-    }
-    
-    var region: String? {
-        guard let actressInfo = self.actressInfo else { return nil }
-        return localizedString(forKey: "region", from: actressInfo.description)
-    }
-    
-    private var actressInfo: ActressInfo? {
-        guard let region = Locale.current.regionCode else { return nil }
-        guard let actressInfo = ActressInfo(rawValue: region) else { return nil }
-        return actressInfo
-    }
-    
-    private func localizedString(forKey key: String, from name: String) -> String {
-        let result = Bundle.main.localizedString(forKey: key, value: nil, table: name)
-        return result
     }
 }
