@@ -8,12 +8,16 @@
 import Foundation
 
 struct Language: CustomStringConvertible {
+    private let descriptionKey = "description"
+    private let birthTitleKey = "birthTitle"
+    private let LanguageInfoTable = "LanguageInfo"
+    
     var description: String {
-        return localizedString(forKey: "description", from: "LanguageInfo")
+        return localizedString(forKey: descriptionKey, from: LanguageInfoTable)
     }
     
     var birthTitle: String {
-        return localizedString(forKey: "birthTitle", from: "LanguageInfo")
+        return localizedString(forKey: descriptionKey, from: LanguageInfoTable)
     }
     
     private func localizedString(forKey key: String, from name: String) -> String {
