@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     private let region = Region()
     private let language = Language()
     private let device = Device()
-    private let fontName = "Helvetica Neue"
 
     override func viewDidLoad() {
         super.viewDidLoad()

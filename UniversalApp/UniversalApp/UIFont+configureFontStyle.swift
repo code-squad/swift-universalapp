@@ -10,7 +10,7 @@ import UIKit
 extension UIFont {
     func configureFontStyle() -> UIFont {
         if #available(iOS 11.0, *) {
-            if let font = UIFont(name: fontName, size: UIFont.systemFontSize) {
+            if let font = UIFont(name: "Helvetica Neue", size: UIFont.systemFontSize) {
                 let fontMetrics = UIFontMetrics(forTextStyle: .body)
                 return fontMetrics.scaledFont(for: font)
             }
