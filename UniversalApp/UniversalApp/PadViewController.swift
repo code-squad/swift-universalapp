@@ -31,6 +31,7 @@ class PadViewController: UIViewController {
         imageView.image = UIImage(named: englishName)
         nameLabel.text = name
         infoLabel.text = info
+        infoLabel.font = UIFont().configureFontStyle()
         languageRegionLabel.text = "\(language)-\(region) : \(device.name)"
         birthButton.setTitle(language.birthTitle, for: UIControl.State.normal)
         birthButton.isEnabled = !device.isSimulator

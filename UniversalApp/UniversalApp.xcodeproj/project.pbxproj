@@ -13,6 +13,7 @@
 		4745072C21D9BF0400C80589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4745072B21D9BF0400C80589 /* Assets.xcassets */; };
 		4745072F21D9BF0400C80589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4745072D21D9BF0400C80589 /* LaunchScreen.storyboard */; };
 		4784DB7221EAFA8000B5E4B8 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784DB7121EAFA8000B5E4B8 /* Device.swift */; };
+		4784DB7421EB16CC00B5E4B8 /* UIFont+configureFontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784DB7321EB16CC00B5E4B8 /* UIFont+configureFontStyle.swift */; };
 		47FCA12321DC66D500F49EAE /* iPadMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FCA12521DC66D500F49EAE /* iPadMain.storyboard */; };
 		47FCA18121DDCA6D00F49EAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47FCA18321DDCA6D00F49EAE /* InfoPlist.strings */; };
 		47FCA19C21DDF69C00F49EAE /* JenniferShraderLawrence.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47FCA19E21DDF69C00F49EAE /* JenniferShraderLawrence.strings */; };
@@ -34,6 +35,7 @@
 		4745072E21D9BF0400C80589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4745073021D9BF0400C80589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4784DB7121EAFA8000B5E4B8 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		4784DB7321EB16CC00B5E4B8 /* UIFont+configureFontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+configureFontStyle.swift"; sourceTree = "<group>"; };
 		47FCA12421DC66D500F49EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPadMain.storyboard; sourceTree = "<group>"; };
 		47FCA12C21DC66F000F49EAE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		47FCA18221DDCA6D00F49EAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				47FCA1AA21DDF6A700F49EAE /* CheonUhui.strings */,
 				47FCA1B021DDF6AC00F49EAE /* FanBingbing.strings */,
 				4784DB7121EAFA8000B5E4B8 /* Device.swift */,
+				4784DB7321EB16CC00B5E4B8 /* UIFont+configureFontStyle.swift */,
 			);
 			path = UniversalApp;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				47FCA1BB21E1E62200F49EAE /* PadViewController.swift in Sources */,
 				4745072721D9BF0300C80589 /* ViewController.swift in Sources */,
+				4784DB7421EB16CC00B5E4B8 /* UIFont+configureFontStyle.swift in Sources */,
 				47FCA1B721DF0C6100F49EAE /* Language.swift in Sources */,
 				4784DB7221EAFA8000B5E4B8 /* Device.swift in Sources */,
 				4745072521D9BF0300C80589 /* AppDelegate.swift in Sources */,
