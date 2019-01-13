@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     private let region = Region()
     private let language = Language()
+    private let device = Device()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +31,9 @@ class ViewController: UIViewController {
         imageView.image = UIImage(named: englishName)
         nameLabel.text = name
         infoLabel.text = info
-        languageRegionLabel.text = "\(language)-\(region)"
+        languageRegionLabel.text = "\(language)-\(region) : \(device.name)"
         birthButton.setTitle(language.birthTitle, for: UIControl.State.normal)
+        birthButton.isEnabled = !device.isSimulator
     }
     
     @IBAction func clickBirthButton(_ sender: UIButton) {

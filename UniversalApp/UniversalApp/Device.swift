@@ -8,16 +8,15 @@
 import UIKit
 
 struct Device {
-    static var isSimulator: Bool {
+    var isSimulator: Bool {
         return ProcessInfo().environment["SIMULATOR_DEVICE_NAME"] != nil
     }
     
-    static var version: String {
-        let device = UIDevice()
-        return device.systemVersion
+    var version: String {
+        return UIDevice().systemVersion
     }
     
-    static var name: String {
+    var name: String {
         var systemInfo = utsname()
         uname(&systemInfo)
         let modelCode = withUnsafePointer(to: &systemInfo.machine) {
