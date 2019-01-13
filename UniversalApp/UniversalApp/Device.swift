@@ -12,10 +12,6 @@ struct Device {
         return ProcessInfo().environment["SIMULATOR_DEVICE_NAME"] != nil
     }
     
-    var version: String {
-        return UIDevice().systemVersion
-    }
-    
     var name: String {
         var systemInfo = utsname()
         uname(&systemInfo)

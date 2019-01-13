@@ -17,10 +17,12 @@ class ViewController: UIViewController {
     private let region = Region()
     private let language = Language()
     private let device = Device()
+    private let fontName = "Helvetica Neue"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
+        configureFontStyle()
     }
     
     private func configure() {
@@ -54,5 +56,17 @@ class ViewController: UIViewController {
     private func configureRounded() {
         imageView.layer.cornerRadius = 20
         imageView.layer.masksToBounds = true
+    }
+    
+    private func configureFontStyle() {
+        if #available(iOS 11.0, *) {
+            if let font = UIFont(name: fontName, size: UIFont.systemFontSize) {
+                let fontMetrics = UIFontMetrics(forTextStyle: .body)
+                infoLabel.font = fontMetrics.scaledFont(for: font)
+            }
+        } else {
+            infoLabel.font = UIFont.systemFont(ofSize: UIFont.systemFontSize)
+        }
+        
     }
 }
