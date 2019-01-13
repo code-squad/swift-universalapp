@@ -10,14 +10,14 @@ import Foundation
 struct Language: CustomStringConvertible {
     private let descriptionKey = "description"
     private let birthTitleKey = "birthTitle"
-    private let LanguageInfoTable = "LanguageInfo"
+    private let languageInfoTable = "LanguageInfo"
     
     var description: String {
-        return localizedString(forKey: descriptionKey, from: LanguageInfoTable)
+        return localizedString(forKey: descriptionKey, from: languageInfoTable)
     }
     
     var birthTitle: String {
-        return localizedString(forKey: descriptionKey, from: LanguageInfoTable)
+        return localizedString(forKey: descriptionKey, from: languageInfoTable)
     }
     
     private func localizedString(forKey key: String, from name: String) -> String {
