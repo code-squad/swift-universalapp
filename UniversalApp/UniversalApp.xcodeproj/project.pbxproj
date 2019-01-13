@@ -14,6 +14,7 @@
 		4745072F21D9BF0400C80589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4745072D21D9BF0400C80589 /* LaunchScreen.storyboard */; };
 		4784DB7221EAFA8000B5E4B8 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784DB7121EAFA8000B5E4B8 /* Device.swift */; };
 		4784DB7421EB16CC00B5E4B8 /* UIFont+configureFontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784DB7321EB16CC00B5E4B8 /* UIFont+configureFontStyle.swift */; };
+		4784DB7721EB194E00B5E4B8 /* LanguageInfo.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4784DB7921EB194E00B5E4B8 /* LanguageInfo.strings */; };
 		47FCA12321DC66D500F49EAE /* iPadMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FCA12521DC66D500F49EAE /* iPadMain.storyboard */; };
 		47FCA18121DDCA6D00F49EAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47FCA18321DDCA6D00F49EAE /* InfoPlist.strings */; };
 		47FCA19C21DDF69C00F49EAE /* JenniferShraderLawrence.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47FCA19E21DDF69C00F49EAE /* JenniferShraderLawrence.strings */; };
@@ -36,6 +37,10 @@
 		4745073021D9BF0400C80589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4784DB7121EAFA8000B5E4B8 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		4784DB7321EB16CC00B5E4B8 /* UIFont+configureFontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+configureFontStyle.swift"; sourceTree = "<group>"; };
+		4784DB7821EB194E00B5E4B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LanguageInfo.strings; sourceTree = "<group>"; };
+		4784DB7A21EB194F00B5E4B8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LanguageInfo.strings; sourceTree = "<group>"; };
+		4784DB7B21EB195000B5E4B8 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LanguageInfo.strings; sourceTree = "<group>"; };
+		4784DB7C21EB195300B5E4B8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LanguageInfo.strings"; sourceTree = "<group>"; };
 		47FCA12421DC66D500F49EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPadMain.storyboard; sourceTree = "<group>"; };
 		47FCA12C21DC66F000F49EAE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		47FCA18221DDCA6D00F49EAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -125,6 +130,7 @@
 				47FCA1B021DDF6AC00F49EAE /* FanBingbing.strings */,
 				4784DB7121EAFA8000B5E4B8 /* Device.swift */,
 				4784DB7321EB16CC00B5E4B8 /* UIFont+configureFontStyle.swift */,
+				4784DB7921EB194E00B5E4B8 /* LanguageInfo.strings */,
 			);
 			path = UniversalApp;
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 				4745072C21D9BF0400C80589 /* Assets.xcassets in Resources */,
 				47FCA1A221DDF6A200F49EAE /* AoiYu.strings in Resources */,
 				47FCA1AE21DDF6AC00F49EAE /* FanBingbing.strings in Resources */,
+				4784DB7721EB194E00B5E4B8 /* LanguageInfo.strings in Resources */,
 				47FCA19C21DDF69C00F49EAE /* JenniferShraderLawrence.strings in Resources */,
 				4745072A21D9BF0300C80589 /* iPhoneMain.storyboard in Resources */,
 				47FCA18121DDCA6D00F49EAE /* InfoPlist.strings in Resources */,
@@ -288,6 +295,17 @@
 				47FCA12C21DC66F000F49EAE /* ko */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4784DB7921EB194E00B5E4B8 /* LanguageInfo.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4784DB7821EB194E00B5E4B8 /* en */,
+				4784DB7A21EB194F00B5E4B8 /* ja */,
+				4784DB7B21EB195000B5E4B8 /* ko */,
+				4784DB7C21EB195300B5E4B8 /* zh-Hans */,
+			);
+			name = LanguageInfo.strings;
 			sourceTree = "<group>";
 		};
 		47FCA12521DC66D500F49EAE /* iPadMain.storyboard */ = {
