@@ -39,7 +39,10 @@ struct Region: CustomStringConvertible {
         }
     }
     
-    var dateFormat = "yyyy-MM-dd"
+    private let dateFormat = "yyyy-MM-dd"
+    private let regionKey = "region"
+    private let nameKey = "name"
+    private let infoKey = "info"
     
     private var actressInfo: ActressInfo? {
         guard let region = Locale.current.regionCode else { return nil }
@@ -54,17 +57,17 @@ struct Region: CustomStringConvertible {
     
     var description: String {
         guard let actressInfo = self.actressInfo else { return "" }
-        return localizedString(forKey: "region", from: actressInfo.englishName)
+        return localizedString(forKey: regionKey, from: actressInfo.englishName)
     }
     
     var localizationName: String? {
         guard let actressInfo = self.actressInfo else { return nil }
-        return localizedString(forKey: "name", from: actressInfo.englishName)
+        return localizedString(forKey: nameKey, from: actressInfo.englishName)
     }
     
     var info: String? {
         guard let actressInfo = self.actressInfo else { return nil }
-        return localizedString(forKey: "info", from: actressInfo.englishName)
+        return localizedString(forKey: infoKey, from: actressInfo.englishName)
     }
     
     var birth: String? {
