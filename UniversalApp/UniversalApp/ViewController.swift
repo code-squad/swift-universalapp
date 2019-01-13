@@ -29,6 +29,10 @@ class ViewController: UIViewController {
         guard let info = region.info else { return }
         
         imageView.image = UIImage(named: englishName)
+        if device.isiPhone8 {
+            configureRounded()
+        }
+        
         nameLabel.text = name
         infoLabel.text = info
         languageRegionLabel.text = "\(language)-\(region) : \(device.name)"
@@ -45,5 +49,10 @@ class ViewController: UIViewController {
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func configureRounded() {
+        imageView.layer.cornerRadius = 20
+        imageView.layer.masksToBounds = true
     }
 }

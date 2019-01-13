@@ -26,6 +26,13 @@ struct Device {
         }
         return modelCode ?? ""
     }
+    
+    var isiPhone8: Bool {
+        let iPhone8version1 = "iPhone10,1"
+        let iPhone8version2 = "iPhone10,4"
+        let name = self.name
+        return name == iPhone8version1 || name == iPhone8version2 ? true : false
+    }
 }
 
 // MARK: Reference
