@@ -60,3 +60,18 @@
 ![Step3_4](CaptureImage/Step3_4.png)
 ![Step3_5](CaptureImage/Step3_5.png)
 ![Step3_6](CaptureImage/Step3_6.png)
+
+# Step4
+> 앱 파편화
+
+### 작업
+1. `Dynamic Type` 적용하여 시스템 글자 크기 조절에 유동적인 대처
+2. 시뮬레이터와 디바이스 타입 나누고 생일버튼 활성화 여부 판단
+3. `아이폰8` 의 경우 사진 모서리 둥글게 처리 (사용중인 폰이 X가 아닌 8이여서 임의적으로 8을 판단하도록 하였습니다.)
+4. AppTarget 10 으로 낮추고 11 이상은 `UIFontMetrics` 사용, 이하는 `SystemFont` 사용
+
+### 첨부파일
+![Step4Demo](CaptureImage/Step4Demo.gif)
+![Step4_1](CaptureImage/Step4_1.png)
+![Step4_2](CaptureImage/Step4_2.png)
+![Step4_3](CaptureImage/Step4_3.png)
